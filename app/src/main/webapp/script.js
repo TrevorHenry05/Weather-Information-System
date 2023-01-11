@@ -54,7 +54,7 @@
 				    document.getElementById("container").appendChild(card);
 		    	}			 
 		    } else {
-				alert("Invalid location or cant connect to resources");
+				alert("Invalid location");
 			}
 		}
 	}
