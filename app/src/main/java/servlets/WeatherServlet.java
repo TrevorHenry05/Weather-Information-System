@@ -41,8 +41,10 @@ public class WeatherServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String locationString = request.getParameter("location");
 		String metricString = request.getParameter("metricsystem");
+		String startdateString = request.getParameter("startdate");
+		String enddateString = request.getParameter("enddate");
 		
-		WeatherAPI locationWeatherAPI = new WeatherAPI(locationString, metricString, null, null);
+		WeatherAPI locationWeatherAPI = new WeatherAPI(locationString, metricString, startdateString, enddateString);
 		String jsonString = "";
 		
 		try {

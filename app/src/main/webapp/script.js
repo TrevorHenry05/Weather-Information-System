@@ -4,7 +4,7 @@
 	 var xhr;
 	
 	try{
-		// Opera 8.0+, Firefox, Safari
+		// Opera, Firefox, Safari
 		xhr = new XMLHttpRequest();
 	} catch (e){
 		// Internet Explorer Browsers
@@ -15,7 +15,7 @@
 				xhr = new ActiveXObject("Microsoft.XMLHTTP");
 			} catch (e){
 				// Something went wrong
-				alert("Your browser broke!");
+				alert("Something went wrong");
 				return false;
 			}
 		}
@@ -76,7 +76,6 @@
 function covertTime(time) {
 	time = time.split(':'); // convert to array
 
-	// fetch
 	var hours = Number(time[0]);
 	var minutes = Number(time[1]);
 	var seconds = Number(time[2]);
@@ -100,7 +99,13 @@ function covertTime(time) {
 }
  
  
- 
+document.querySelector("#enddate").oninput = function() {
+    if(this.value.length > 0) {
+        document.querySelector("#startdate").setAttribute("required", true);
+    } else {
+        document.querySelector("#startdate").setAttribute("required", false);
+    }
+}
  
  
 

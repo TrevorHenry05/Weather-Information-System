@@ -75,7 +75,6 @@ public class WeatherAPI {
 		//build URL pieces
 		StringBuilder requestBuilder = new StringBuilder(API_ENDPOIT);
 		requestBuilder.append(URLEncoder.encode(this.getLocation(), StandardCharsets.UTF_8.toString()));
-		
 		if(getStartDate() != null && !getStartDate().isEmpty()) {
 			requestBuilder.append("/").append(getStartDate());
 			if(getEndDate() != null && !getEndDate().isEmpty()) {
