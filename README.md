@@ -2,7 +2,7 @@
 
 A weather information system that uses https://www.visualcrossing.com/ weather and data api to fetch weather data for any user entered location and then present it on the HTML page as cards that represent the weather data for each given date.
 
-When searching, you have the option to enter a location in the text box and select the preferred metric system from the drop-down menu. These two options are required in order to receive accurate results. Additionally, you have the option to specify a date range for your search. If you choose to enter an end date, it is mandatory to also enter a start date. However, if you only enter a start date, the end date is optional. This feature can provide you with more specific and relevant information, and can enhance your search experience.
+When searching, you have the option to enter a location in the text box and select the preferred metric system from the drop-down menu such as US, Metric, and UK. These two options are required in order to receive accurate results. Additionally, you have the option to specify a date range for your search. If you choose to enter an end date, it is mandatory to also enter a start date. However, if you only enter a start date, the end date is optional. This feature can provide you with more specific and relevant information, and can enhance your search experience.
 
 ![GitHub Logo](/Images/search.PNG)
 
